@@ -29,5 +29,13 @@ public class MainActivity extends AppCompatActivity {
                 mediaPlayer.pause();
             }
         });
+
+        Button forwardButton = findViewById(R.id.forward_button);
+        forwardButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mediaPlayer.seekTo(50000);
+            }
+        });
     }
 }
